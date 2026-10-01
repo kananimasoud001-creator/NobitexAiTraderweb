@@ -1,0 +1,11 @@
+{
+  "name": "nobitex-ai-trader-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
