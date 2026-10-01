@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Tahoma, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+header p {
+  margin: 0;
+  opacity: 0.7;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 0 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+  gap: 14px;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #243044;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 14px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.big {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.badge {
+  background: #374151;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-weight: 700;
+}
+
+ul {
+  padding-right: 20px;
+}
+
+li {
+  margin: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0 14px;
+}
+
+.actions button {
+  border: 0;
+  border-radius: 12px;
+  padding: 13px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+.actions button.danger {
+  background: #7f1d1d;
+}
+
+.actions button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+
+  header h1 {
+    font-size: 19px;
+  }
+
+  header p {
+    font-size: 13px;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .actions {
+    padding: 0 10px;
+  }
+
+  .actions button {
+    flex: 1;
+    min-width: 100px;
+  }
+}
