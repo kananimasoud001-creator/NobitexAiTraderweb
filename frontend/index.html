@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color"
+        content="#111827">
+
+  <link rel="manifest"
+        href="/manifest.webmanifest">
+
+  <link rel="stylesheet"
+        href="/style.css">
+
+  <title>Nobitex AI Trader</title>
+</head>
+
+<body>
+
+<header>
+
+  <div>
+    <h1>ربات هوشمند نوبیتکس</h1>
+    <p>Short-Term AI Trading · Web/PWA</p>
+  </div>
+
+  <span id="mode"
+        class="badge">
+    Paper
+  </span>
+
+</header>
+
+
+<main>
+
+  <section class="grid">
+
+    <article class="card">
+
+      <h2>BTC / IRT</h2>
+
+      <div id="price"
+           class="big">
+        —
+      </div>
+
+      <div id="marketStatus">
+        در حال دریافت داده...
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <h2>AI Decision</h2>
+
+      <div id="decision"
+           class="big">
+        WAIT
+      </div>
+
+      <div id="reason">
+        در انتظار تحلیل
+      </div>
+
+    </article>
+
+
+    <article class="card">
+
+      <h2>Risk Engine</h2>
+
+      <div>
+        حداکثر ریسک:
+        <b id="risk">1%</b>
+      </div>
+
+      <div>
+        حد ضرر روزانه:
+        <b>3%</b>
+      </div>
+
+      <div>
+        انتقال دارایی:
+        <b>غیرفعال</b>
+      </div>
+
+    </article>
+
+  </section>
+
+
+  <section class="card">
+
+    <h2>
+      Pre-Trade Checklist
+    </h2>
+
+    <ul id="checklist">
+
+      <li>
+        داده بازار
+        <span>⏳</span>
+      </li>
+
+      <li>
+        Market Regime
+        <span>⏳</span>
+      </li>
+
+      <li>
+        AI Confirmation
+        <span>⏳</span>
+      </li>
+
+      <li>
+        Risk / Reward
+        <span>⏳</span>
+      </li>
+
+      <li>
+        Fee + Slippage
+        <span>⏳</span>
+      </li>
+
+      <li>
+        Latency / Data Freshness
+        <span>⏳</span>
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <section class="actions">
+
+    <button id="refresh">
+      به‌روزرسانی
+    </button>
+
+    <button id="analyze">
+      تحلیل AI
+    </button>
+
+    <button
+      class="danger"
+      id="stop">
+
+      🛑 توقف ربات
+
+    </button>
+
+  </section>
+
+
+  <section class="card">
+
+    <h2>
+      🔐 امنیت
+    </h2>
+
+    <p>
+      کلید API در مرورگر ذخیره نمی‌شود.
+      این نسخه Live Trading را فعال نمی‌کند
+      و هیچ قابلیت برداشت یا انتقال دارایی ندارد.
+    </p>
+
+  </section>
+
+</main>
+
+
+<script src="/app.js"></script>
+
+</body>
+
+</html>
